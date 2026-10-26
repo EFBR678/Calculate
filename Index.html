@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiply Numbers</title>
+</head>
+<body>
+
+  <h1 id="main-title">Multiply Numbers!</h1>
+
+  <!-- 1. Input fields and Button -->
+  <input type="number" id="num-1" value="10">
+  <input type="number" id="num-2" value="2">
+  <button onclick="multiplyNumbers()">Click me</button>
+
+  <p id="answer">Answer will show here</p>
+
+  <script>
+    function multiplyNumbers() {
+      // 2. Get the numbers from inputs and convert to numbers
+      let n1 = Number(document.getElementById("num-1").value);
+      let n2 = Number(document.getElementById("num-2").value);
+
+      // 3. Multiply numbers together
+      let total = n1 * n2;
+
+      // 4. Show the answer on the screen using DOM
+      let title = document.getElementById("main-title");
+      title.textContent = "Multiplication Result: " + total;
+    }
+  </script>
+
+</body>
+</html>
